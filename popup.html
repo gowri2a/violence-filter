@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <title>Classifier</title>
+    <title>Image Classifier Extension</title>
+    <link rel="stylesheet" href="popup.css">
+    <style>
+        /* Add your CSS styles here */
+        
+    </style>
+</head>
+<body>
+    <button class="button--scrape">Scrape Images</button>
+    <!--<input type="file" id="imageInput" accept="image/*">-->
+    <br>
+    <br>
+    <button class="button--classify">Classify Image</button>
+    <button class="output" id="test" value = "hi" hidden=True></button>
+   
+    <div id="result"></div>
+
+    <script src="excptn.js"></script>
+    <script src="background.js"></script>
+    <script src="popup.js"></script>
+    <!--<script src="results.js"></script>-->
+    <!--<script src="tfjs.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script> -->
+    <script src="model.js"></script> <!-- Include your TensorFlow.js model -->
+    <script src="script.js"></script> <!-- Your JavaScript code -->
+</body>
+</html>
